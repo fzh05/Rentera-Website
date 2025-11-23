@@ -2,69 +2,148 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rentera — Share & Rent</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- favicon atau logo bisa ditaruh di folder images -->
 </head>
-
 <body>
-
-  <!-- NAVBAR -->
+  <!-- NAV -->
   <header class="nav">
-    <div class="container nav-flex">
-      <div class="brand">
-        <img src="images/LOGO RENTERA.png" alt="Logo Rentera" class="logo">
-        <span>RENTERA</span>
-      </div>
-
+    <div class="container">
+      <div class="brand">RENTERA</div>
       <nav class="menu">
         <a href="#features">Fitur</a>
         <a href="#explore">Explore</a>
         <a href="#community">Komunitas</a>
         <a href="#contact">Kontak</a>
+        <button id="btn-login" class="btn small">Login</button>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container hero-grid">
-      
-      <!-- TEXT ON LEFT -->
-      <div class="hero-left">
-        <h1>Simplify access — reduce waste & empower sustainable living</h1>
-        <p>Temukan barang untuk disewa atau bangun toko di Rentera. Rental platform untuk manage transaksi, explore produk, dan membangun komunitas.</p>
-        
-        <div class="cta">
-          <a href="#explore" class="btn">Mulai Jelajah</a>
-          <a href="#explore" class="btn outline">Buat Toko</a>
-        </div>
+  <!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <h1>Simplify access — reduce waste & power sustainable living</h1>
+      <p>Temukan barang untuk disewa atau bangun toko di Rentera. Manage & Notifikasi, Rent & Secure Transactions, Connect Community.</p>
+      <div class="cta">
+        <a href="#explore" class="btn">Mulai Jelajah</a>
+        <a href="#explore" class="btn muted">Buat Toko</a>
       </div>
 
-      <!-- IMAGES RIGHT -->
-      <div class="hero-right">
-        <div class="service-container">
-          
-          <div class="service-item">
-            <img src="images/Rent.png" alt="Rent">
-            <p>Rent</p>
-          </div>
+      <ul class="meta-list">
+        <li><strong>230+</strong> transaksi sukses</li>
+        <li><strong>128</strong> ulasan (rating 4.8)</li>
+      </ul>
+    </div>
 
-          <div class="service-item">
-            <img src="images/Repeat.png" alt="Repeat">
-            <p>Repeat</p>
-          </div>
+    <!-- Gambar header hero baru -->
+    <div class="hero-right">
+      <img src="images/Header web.png" alt="Rentera header" class="hero-img">
+    </div>
+  </div>
+</section>
 
-          <div class="service-item">
-            <img src="images/Reuse.png" alt="Reuse">
-            <p>Reuse</p>
-          </div>
 
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Fitur Utama</h2>
+      <div class="features-grid">
+        <div class="card">
+          <h3>Manage & Notifikasi</h3>
+          <p>Kelola sewa, notifikasi, dan update transaksi secara mudah.</p>
+        </div>
+        <div class="card">
+          <h3>Rent & Secure Transactions</h3>
+          <p>Transaksi aman dan terverifikasi untuk owner & renter.</p>
+        </div>
+        <div class="card">
+          <h3>Explore & Discover</h3>
+          <p>Cari kategori seperti Elektronik, Kendaraan, Event, Kreatif, dsb.</p>
+        </div>
+        <div class="card">
+          <h3>Community</h3>
+          <p>Forum komunitas untuk berbagi cerita & impact sosial.</p>
         </div>
       </div>
-
     </div>
   </section>
 
+  <!-- EXPLORE / LISTINGS -->
+  <section id="explore" class="section light">
+    <div class="container">
+      <h2>Browse Product</h2>
+      <div class="listings-grid">
+        <!-- contoh 3 listing -->
+        <article class="listing">
+          <img src="images/item1.jpg" alt="Item 1" />
+          <h4>Kamera DSLR</h4>
+          <p>Harga sewa / hari: Rp 100.000</p>
+          <p class="meta">Rating 4.8 — 15 barang disewakan</p>
+          <button class="btn small">Lihat barang</button>
+        </article>
+        <article class="listing">
+          <img src="images/item2.jpg" alt="Item 2" />
+          <h4>Tenda Camping</h4>
+          <p>Harga sewa / hari: Rp 60.000</p>
+          <p class="meta">Rating 4.6 — Tersedia</p>
+          <button class="btn small">Lihat barang</button>
+        </article>
+        <article class="listing">
+          <img src="images/item3.jpg" alt="Item 3" />
+          <h4>Speakers Event</h4>
+          <p>Harga sewa / hari: Rp 150.000</p>
+          <p class="meta">Rating 4.9 — 5 barang</p>
+          <button class="btn small">Lihat barang</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="section">
+    <div class="container">
+      <h2>Komunitas RENTERA</h2>
+      <p>Bagikan cerita dan tantangan sewa-menyewa yang sustainable.</p>
+      <div class="community-grid">
+        <div class="post">
+          <strong>Zyelianna Mayandra</strong>
+          <p>“I love Rentera’s Community Forum feature!”</p>
+        </div>
+        <div class="post">
+          <strong>Huang Xuxi</strong>
+          <p>“So many inspiring stories from people shifting from consumerism to sustainability.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>RENTERA</h3>
+        <p>rentera.platform@gmail.com<br/>Wisma ITERA, Lampung Selatan</p>
+      </div>
+      <div>
+        <h4>Link</h4>
+        <ul>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#explore">Product</a></li>
+          <li><a href="#community">Komunitas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Catatan</h4>
+        <p>Data & teks di halaman ini bisa diubah pada file HTML / CSS sesuai kebutuhan.</p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Rentera</div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
