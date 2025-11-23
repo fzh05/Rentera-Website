@@ -82,6 +82,22 @@ body {
   color:#555; 
 }
 
+.hero-img {
+  width: 100%;       /* mengikuti lebar kolom hero */
+  max-width: 420px;  /* maksimal lebar sesuai layout */
+  height: auto;      /* proporsinya tetap */
+  display: block;
+  border-radius: 8px; /* opsional, biar agak bulat */
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .hero-img {
+    max-width: 100%; /* gambar ikut mengecil di mobile */
+  }
+}
+
+
 /* === 3 GAMBAR: Rent - Repeat - Reuse === */
 .service-container {
   display: flex;
