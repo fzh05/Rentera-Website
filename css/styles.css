@@ -226,3 +226,72 @@ body {
 @media (max-width:600px) {
   .features-grid { grid-template-columns:1fr; }
 }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Nav Enhancement */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav .container {
+    /* Keep row layout for logo and hamburger */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    border-top: 1px solid #eee;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    margin: 0;
+    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f9f9f9;
+  }
+
+  .menu a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .menu .btn {
+    margin: 16px auto 0;
+    display: table; /* Centers the button if width is auto */
+    width: auto;
+  }
+}
